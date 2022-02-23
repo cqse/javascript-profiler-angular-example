@@ -10,7 +10,8 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "e2e": "ng e2e",
-    "instrument": "npx @teamscale/javascript-instrumenter test/casestudies/angular-hero-app/dist/ --collector localhost:54678 --in-place --include-origin src/app/**/*"
+    "collector": "npx @teamscale/coverage-collector --port 54678 --dump-to-file=./coverage.simple",
+    "e2e-with-coverage": "ng e2e --configuration coverage"
   },
   "private": true,
   "dependencies": {

@@ -109,6 +109,9 @@
           "configurations": {
             "production": {
               "devServerTarget": "angular.io-example:serve:production"
+            },
+            "coverage": {
+              "devServerTarget": ""
             }
           }
         }
